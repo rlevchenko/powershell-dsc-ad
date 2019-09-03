@@ -134,14 +134,14 @@ configuration DC01
           RebootNodeIfNeeded = $true
 
         }
-        ## 10/17 Update
+
         WindowsFeature WinBackup
         {
             Ensure = 'Present'
             Name = 'Windows-Server-Backup'
             DependsOn  = '[xPendingReboot]AfterFirstDC'
         }
-        ## End
+    
         
    #### Delete DNS Forwarders and create txt file @end #####     
    
