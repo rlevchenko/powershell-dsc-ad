@@ -4,6 +4,6 @@ Automates deployment of a new Active Directory forest consisting of two domain c
 ## Please note
 
 - All-in-one : one file to configure a forest with two DCs
-- first. cr : custom resource with PowerShell DSC script to configure root DC
-- second.cr : custom resource with PowerShell DSC script to add the second DC
+- firstdc. cr : custom resource with PowerShell DSC script to configure root DC
+- seconddc.cr : custom resource with PowerShell DSC script to add the second DC
 - Written, tested and verified in far 2016. Should work with later WS though.
