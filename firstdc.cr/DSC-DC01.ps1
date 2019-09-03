@@ -11,9 +11,9 @@
 param ()
 
 #Parameters
-$domainname="rl-" + $args[0]+'.com'
-$netbios="rl-"+$args[0]
-$dcname="rl-"+$args[0]+'-'+"DC01"
+$domainname="rlev-" + $args[0]+'.com'
+$netbios="rlev-"+$args[0]
+$dcname="rlev"+$args[0]+'-'+"DC01"
 $pwd = ConvertTo-SecureString "Pass1234" -AsPlainText -Force
 $domainCred = New-Object System.Management.Automation.PSCredential ("$netbios\Administrator", $pwd)
 $safemodeAdministratorCred = New-Object System.Management.Automation.PSCredential ("$netbios\Administrator", $pwd)
